@@ -1,16 +1,3 @@
 .DS_Store
 node_modules
-password01.txt
-password02.txt
-password03.txt
-password04.txt
-password05.txt
-password06.txt
-password07.txt
-password08.txt
-password09.txt
-password10.txt
-password11.txt
-password12.txt
-password13.txt
-password14.txt
+password/
