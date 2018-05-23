@@ -73,20 +73,6 @@ function main(aa, bb, cc, dd, ee, ff, gg, hh) {
                                         });
                                         return
                                     }
-                                    // for (var i = ii; i < sourceArr.length; i++) {
-                                    //     for (var j = jj; j < sourceArr.length; j++) {
-                                    //         for (var k = kk; k < sourceArr.length; k++) {
-                                    //             for (var l = ll; l < sourceArr.length; l++) {
-                                    //                 for (var m = mm; m < sourceArr.length; m++) {
-                                    //                     for (var n = nn; n < sourceArr.length; n++) {
-                                    //                         console.log(sourceArr[a] + sourceArr[b] + sourceArr[c] + sourceArr[d] + sourceArr[e] + sourceArr[f] + sourceArr[g] + sourceArr[h] + sourceArr[i] + sourceArr[j] + sourceArr[k] + sourceArr[l] + sourceArr[m] + sourceArr[n])
-                                    //                         strArr.push(sourceArr[a] + sourceArr[b] + sourceArr[c] + sourceArr[d] + sourceArr[e] + sourceArr[f] + sourceArr[g] + sourceArr[h] + sourceArr[i] + sourceArr[j] + sourceArr[k] + sourceArr[l] + sourceArr[m] + sourceArr[n])
-                                    //                     }
-                                    //                 }
-                                    //             }
-                                    //         }
-                                    //     }
-                                    // }
                                 }
                             }
                         }
