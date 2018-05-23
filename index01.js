@@ -19,7 +19,6 @@ function main(aa) {
                     shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index02.js");
                     return;
                 }
-                console.log('\033[32m 写入完成，继续执行 \033[32m');
                 main(a);
             });
             return

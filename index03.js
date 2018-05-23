@@ -29,7 +29,6 @@ function main(aa, bb, cc) {
                                 }
                             }
                         }
-                        console.log('\033[32m 写入完成，继续执行 \033[32m');
                         main(a, b, c)
                     });
                     return
