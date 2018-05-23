@@ -23,20 +23,20 @@ function main(aa, bb, cc) {
                                 b = 0;
                                 a = a + 1;
                                 if (a > maxvalue) {
-                                    console.log('\033[32m 全部执行完毕 \033[32m');
+                                    console.log('\033[32m 三位全部执行完毕 \033[32m');
                                     shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index04.js");
                                     return;
                                 }
                             }
                         }
-                        main(a, b, c)
+                        main(a, b, c);
                     });
                     return
                 }
                 if (a == maxvalue && b == maxvalue && c == maxvalue) {
                     var str = strArr.join('\n') + '\n'
                     fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password03.txt', str, function(err) {
-                        console.log('\033[32m 全部执行完毕 \033[32m');
+                        console.log('\033[32m 三位全部执行完毕 \033[32m');
                         shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index04.js");
                     });
                     return
@@ -47,6 +47,6 @@ function main(aa, bb, cc) {
 }
 
 fs.writeFile('/Users/liaoyajun/lab/其他/produceTxt/password/password03.txt', '', function(err) {
-    console.log('\033[32m 清空数据 \033[32m');
+    console.log('\033[32m 三位清空数据 \033[32m');
     main(0, 0, 0);
 });

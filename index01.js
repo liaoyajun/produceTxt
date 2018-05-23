@@ -15,7 +15,7 @@ function main(aa) {
             fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password01.txt', str, function(err) {
                 a = a + 1;
                 if (a > maxvalue) {
-                    console.log('\033[32m 全部执行完毕 \033[32m');
+                    console.log('\033[32m 一位全部执行完毕 \033[32m');
                     shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index02.js");
                     return;
                 }
@@ -26,7 +26,7 @@ function main(aa) {
         if (a == maxvalue) {
             var str = strArr.join('\n') + '\n'
             fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password01.txt', str, function(err) {
-                console.log('\033[32m 全部执行完毕 \033[32m');
+                console.log('\033[32m 一位全部执行完毕 \033[32m');
                 shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index02.js");
             });
             return
@@ -35,6 +35,6 @@ function main(aa) {
 }
 
 fs.writeFile('/Users/liaoyajun/lab/其他/produceTxt/password/password01.txt', '', function(err) {
-    console.log('\033[32m 清空数据 \033[32m');
+    console.log('\033[32m 一位清空数据 \033[32m');
     main(0);
 });
