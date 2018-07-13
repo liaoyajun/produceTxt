@@ -14,7 +14,7 @@ function main(aa, bb, cc) {
                 count++;
                 if (count == 1000000) {
                     var str = strArr.join('\n') + '\n'
-                    fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password03.txt', str, function(err) {
+                    fs.appendFile('/Users/liaoyajun/lab/github/produceTxt/password/password03.txt', str, function(err) {
                         c = c + 1;
                         if (c > maxvalue) {
                             c = 0;
@@ -24,7 +24,7 @@ function main(aa, bb, cc) {
                                 a = a + 1;
                                 if (a > maxvalue) {
                                     console.log('\033[32m 3位全部执行完毕 \033[0m');
-                                    shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index04.js");
+                                    shell.exec("node /Users/liaoyajun/lab/github/produceTxt/index04.js");
                                     return;
                                 }
                             }
@@ -35,9 +35,9 @@ function main(aa, bb, cc) {
                 }
                 if (a == maxvalue && b == maxvalue && c == maxvalue) {
                     var str = strArr.join('\n') + '\n'
-                    fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password03.txt', str, function(err) {
+                    fs.appendFile('/Users/liaoyajun/lab/github/produceTxt/password/password03.txt', str, function(err) {
                         console.log('\033[32m 3位全部执行完毕 \033[0m');
-                        shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index04.js");
+                        shell.exec("node /Users/liaoyajun/lab/github/produceTxt/index04.js");
                     });
                     return
                 }
@@ -46,7 +46,7 @@ function main(aa, bb, cc) {
     }
 }
 
-fs.writeFile('/Users/liaoyajun/lab/其他/produceTxt/password/password03.txt', '', function(err) {
+fs.writeFile('/Users/liaoyajun/lab/github/produceTxt/password/password03.txt', '', function(err) {
     console.log('\033[32m 3位清空数据 \033[0m');
     main(0, 0, 0);
 });

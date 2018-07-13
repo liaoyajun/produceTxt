@@ -21,7 +21,7 @@ function main(aa, bb, cc, dd) {
                     count++;
                     if (count == 1000000) {
                         var str = strArr.join('\n') + '\n'
-                        fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password04.txt', str, function(err) {
+                        fs.appendFile('/Users/liaoyajun/lab/github/produceTxt/password/password04.txt', str, function(err) {
                             d = d + 1;
                             if (d > maxvalue) {
                                 d = 0;
@@ -36,7 +36,7 @@ function main(aa, bb, cc, dd) {
                                             console.log(formDate(new Date() - time));
                                             console.log('\033[32m \n4位全部执行完毕 \033[0m');
                                             setTimeout(function() {
-                                                shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index05.js");
+                                                shell.exec("node /Users/liaoyajun/lab/github/produceTxt/index05.js");
                                             }, 2000);
                                             return;
                                         }
@@ -50,11 +50,11 @@ function main(aa, bb, cc, dd) {
                     }
                     if (a == maxvalue && b == maxvalue && c == maxvalue && d == maxvalue) {
                         var str = strArr.join('\n') + '\n'
-                        fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password04.txt', str, function(err) {
+                        fs.appendFile('/Users/liaoyajun/lab/github/produceTxt/password/password04.txt', str, function(err) {
                             console.log(formDate(new Date() - time));
                             console.log('\033[32m \n4位全部执行完毕 \033[0m');
                             setTimeout(function() {
-                                shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index05.js");
+                                shell.exec("node /Users/liaoyajun/lab/github/produceTxt/index05.js");
                             }, 2000);
                             return;
                         });
@@ -66,7 +66,7 @@ function main(aa, bb, cc, dd) {
     }
 }
 
-fs.writeFile('/Users/liaoyajun/lab/其他/produceTxt/password/password04.txt', '', function(err) {
+fs.writeFile('/Users/liaoyajun/lab/github/produceTxt/password/password04.txt', '', function(err) {
     console.log('\033[32m 4位清空数据 \033[0m');
     main(0, 0, 0, 0);
 });

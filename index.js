@@ -19,7 +19,7 @@ function main(aa, bb, cc, dd, ee, ff, gg, hh) {
                                     count++;
                                     if (count == 10) {
                                         var str = strArr.join('\n') + '\n'
-                                        fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password.txt', str, function(err) {
+                                        fs.appendFile('/Users/liaoyajun/lab/github/produceTxt/password.txt', str, function(err) {
                                             if(err) {
                                                 console.log('err=>>>>>>>>>>>>>>>>>>>>>');
                                                 return console.log(err);
@@ -64,7 +64,7 @@ function main(aa, bb, cc, dd, ee, ff, gg, hh) {
                                     }
                                     if (a == maxvalue && b == maxvalue && c == maxvalue && d == maxvalue && e == maxvalue && f == maxvalue && g == maxvalue && h == maxvalue) {
                                         var str = strArr.join('\n') + '\n'
-                                        fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password.txt', str, function(err) {
+                                        fs.appendFile('/Users/liaoyajun/lab/github/produceTxt/password.txt', str, function(err) {
                                             if(err) {
                                                 console.log('err=>>>>>>>>>>>>>>>>>>>>>');
                                                 return console.log(err);

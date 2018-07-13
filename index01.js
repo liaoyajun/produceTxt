@@ -12,11 +12,11 @@ function main(aa) {
         count++;
         if (count == 1000000) {
             var str = strArr.join('\n') + '\n'
-            fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password01.txt', str, function(err) {
+            fs.appendFile('/Users/liaoyajun/lab/github/produceTxt/password/password01.txt', str, function(err) {
                 a = a + 1;
                 if (a > maxvalue) {
                     console.log('\033[32m 1 位全部执行完毕 \033[0m');
-                    shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index02.js");
+                    shell.exec("node /Users/liaoyajun/lab/github/produceTxt/index02.js");
                     return;
                 }
                 main(a);
@@ -25,16 +25,16 @@ function main(aa) {
         }
         if (a == maxvalue) {
             var str = strArr.join('\n') + '\n'
-            fs.appendFile('/Users/liaoyajun/lab/其他/produceTxt/password/password01.txt', str, function(err) {
+            fs.appendFile('/Users/liaoyajun/lab/github/produceTxt/password/password01.txt', str, function(err) {
                 console.log('\033[32m 1 位全部执行完毕 \033[0m');
-                shell.exec("node /Users/liaoyajun/lab/其他/produceTxt/index02.js");
+                shell.exec("node /Users/liaoyajun/lab/github/produceTxt/index02.js");
             });
             return
         }
     }
 }
 
-fs.writeFile('/Users/liaoyajun/lab/其他/produceTxt/password/password01.txt', '', function(err) {
+fs.writeFile('/Users/liaoyajun/lab/github/produceTxt/password/password01.txt', '', function(err) {
     console.log('\033[32m 1 位清空数据 \033[0m');
     main(0);
 });
